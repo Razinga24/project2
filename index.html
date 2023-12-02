@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptonite</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    <script src="jquery-3.7.0.js"></script>
+
+    <script src="arr.js"></script>
+    <!-- Our Script -->
+    <script src="main.js"></script>
+    
+    <!-- Our Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="parallax">
+    <h1 class="scrollDown">Scroll down</h1>
+  </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <img src="assets/images/bitcoin.png" height="30px">
+              <a class="navbar-brand" href="">Cryptonite</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link pointer active" data-page="#coins">Coins</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pointer disabled" data-page="#liveReports">Live Reports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pointer" data-page="#about">About</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input id="searchBox" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button id="searchVal" class="btn btn-outline-success" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+ 
+    <main>
+
+      
+        <!-- Ajax -->
+
+        <div class="container cry-page active" id="coins">
+            <div id="cardBox" class="loader_wrap row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+              <span class="circle-packman-1"></span>
+            </div>
+        </div>
+
+        <!-- Bonus -->
+        <div on class="container cry-page" id="liveReports">liveReports...</div>
+
+          <div class="container cry-page" id="about">
+            <h1>About Cryptonite</h1>
+            <p>Welcome to Cryptonite – Unveiling the World of Cryptocurrencies</p>
+            <p>Hello, I'm Raz Benayoun, the creator behind Cryptonite. I've founded this platform with a clear goal: to provide you with a straightforward and reliable source of information about cryptocurrencies and blockchain technology.</p>
+                
+            <h2>Our Mission</h2>
+            <p>Cryptonite is here to make the complex world of crypto accessible to everyone. We understand that the intricacies of blockchain and digital currencies can be overwhelming, so we've distilled this knowledge into easy-to-understand articles and insights.</p>
+                
+            <h2>What We Offer</h2>
+            <ul>
+              <li><strong>Clear Insights:</strong> Discover the latest trends, market updates, and project reviews. Our team works diligently to ensure you're well-informed about the ever-changing crypto landscape.</li>
+              <li><strong>Simplified Learning:</strong> Cryptonite's content breaks down blockchain technology and crypto concepts without the jargon, empowering you to explore this revolutionary technology confidently.</li>
+            </ul>
+            
+            <h2>Our Commitment</h2>
+            <ul>
+              <li><strong>Reliability:</strong> Trustworthy information is at the core of Cryptonite. Our content is curated by experts to provide accurate insights and help you make informed decisions.</li>
+              <li><strong>Ease:</strong> Navigating the crypto world should be easy, not perplexing. Cryptonite ensures that learning about cryptocurrencies is an enjoyable journey for both beginners and enthusiasts.</li>
+            </ul>
+            
+            <div class="signature">
+              <p>Join Me on This Crypto Adventure</p>
+              <p>The future holds boundless possibilities in the crypto space. At Cryptonite, I invite you to join me on this exciting journey. Explore our content, engage with the community, and stay ahead in the world of crypto.</p>
+              <p>Thank you for choosing Cryptonite as your gateway to the world of cryptocurrencies.</p>
+              <p>Best regards,</p>
+              <p>Raz Benayoun<br>Founder, Cryptonite</p>
+            </div>
+        </div>
+        
+        
+       
+        <!-- Modal -->
+        <div class="modal fade" id="listModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">You Have To Choose Five Coins Only, Which One Do You Want To Swap?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">...</div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+
+    </main>
+    
+</body>
+</html>
